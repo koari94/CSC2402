@@ -12,8 +12,6 @@ typedef struct staffStruct
     int staffProf;
 }staff;
 
-
-
 void printArray(int counter, staff *array)
 {
     for (int i = 0; i < counter; i++)
@@ -24,7 +22,6 @@ void printArray(int counter, staff *array)
 
 int main()
 {
-    string name;
     string SENTINEL = "done";
     int i = 0;
     int counter = 0;
