@@ -23,6 +23,7 @@ void printEntry (int staffProf, string name)
             break;
         default:
         {
+            cin.clear();
             cout << "Wrong Entry!" << endl;
         }
     }
@@ -46,7 +47,7 @@ int main()
             cin >> staffProf;
             printEntry(staffProf, name);
             // due to leftovers in the input buffer, cin.ignore() tails the loop to ensure the name input starts from scratch
-            cin.ignore();
+            cin.ignore(99999,'\n');
             count++;
         }
     }

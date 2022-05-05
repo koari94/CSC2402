@@ -66,14 +66,14 @@ int main()
             else
             {
                 // in case of wrong input, clears the name input so the loop can start fresh 
-                staff[i].name.clear();
+                cin.clear();
                 i--;
                 counter--;
                 // regressing integer and counter to ensure the wrong input is overwritten
                 // also for some reason if counter doesn't regress it will display the 'done' sentinel in the finished display
                 cout << "Wrong Entry!" << endl;
             }
-            cin.ignore();
+            cin.ignore(9999999, '\n');
             counter++;
             i++;
         }
